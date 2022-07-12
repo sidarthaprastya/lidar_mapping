@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/dartha/Documents/KRAI/streaming/devel/include/**",
+        "/home/dartha/Documents/KRAI/R2_ROS/devel/include/**",
+        "/home/dartha/Documents/TUBES_SISMIK/devel/include/**",
+        "/home/dartha/Documents/KRAI/R1_ROS/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/dartha/Documents/KRAI/roscamera/src/vision_opencv/cv_bridge/include/**",
+        "/home/dartha/Documents/KRAI/roscamera/src/vision_opencv/image_geometry/include/**",
+        "/home/dartha/Documents/KRAI/R1_ROS/src/jetson_r1/include/**",
+        "/home/dartha/Documents/KRAI/R1_ROS/src/master/include/**",
+        "/home/dartha/Documents/KRAI/R2_ROS/src/nuc_r2/include/**",
+        "/home/dartha/Documents/KRAI/roscamera/src/opencv/include/**",
+        "/home/dartha/Documents/inti_project/lidar_mapping/src/simple_mapping/include/**",
+        "/home/dartha/Documents/KRAI/R1_ROS/src/slave/include/**",
+        "/home/dartha/Documents/KRAI/R2_ROS/src/slave_r2/include/**",
+        "/home/dartha/Documents/inti_project/lidar_mapping/src/template_gui_package/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

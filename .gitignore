@@ -1,0 +1,8 @@
+build/
+devel/
+
+lidar_mapping.workspace
+lidar_mapping.workspace.user
+
+src/CMakeLists.txt
+.catkin_workspace
