@@ -1,6 +1,7 @@
 #include "tfplus.h"
 
 char OBTAIN_DATA_CM[5] =   {0x5A, 0x05, 0x00, 0x01, 0x60};
+int i;
 
 tfplus::tfplus(char address=0x10){
     this->address = address;
@@ -16,8 +17,8 @@ void tfplus::getData(void){
 
     Wire.write(OBTAIN_DATA_CM, sizeof(OBTAIN_DATA_CM));
     Wire.endTransmission();
-    int i = 0;
-    Wire.requestFrom(this->address, 9);
+    i = 0;
+    Wire.requestFrom(this->address, 8);
     while(Wire.available()){
         data[i] = Wire.read();
         i++;

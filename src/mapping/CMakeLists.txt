@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(simple_mapping)
+project(mapping)
 
 set(ROS_DEPENDS
   roscpp
@@ -45,7 +45,17 @@ endforeach(DEPEND)
 ###
 ###  Add any required ros packages here
 ###
-find_package(catkin REQUIRED COMPONENTS ${ROS_DEPENDS})
+find_package(catkin REQUIRED COMPONENTS ${ROS_DEPENDS} message_generation)
+
+add_message_files(
+  FILES
+  mapping_vect.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 catkin_package(
   INCLUDE_DIRS
@@ -53,7 +63,7 @@ catkin_package(
   LIBRARIES
     ${PROJECT_NAME}
   CATKIN_DEPENDS
-    ${ROS_DEPENDS}
+    ${ROS_DEPENDS} message_runtime
   DEPENDS
     ${EXTERNAL_DEPENDS}
 )

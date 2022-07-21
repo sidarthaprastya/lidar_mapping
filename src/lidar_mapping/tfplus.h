@@ -9,7 +9,7 @@
 class tfplus{
     private:
         char address;
-        char data[9];
+        uint8_t data[9];
 
     public:
         // Initiate device TFPlus
@@ -20,9 +20,9 @@ class tfplus{
         // Get data: Distance, strength, and temperature
         void getData(void);
 
-        int distance;
-        int strength;
-        int temperature;
+        uint16_t distance;
+        uint16_t strength;
+        uint16_t temperature;
 };
 
 #endif

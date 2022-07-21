@@ -1,6 +1,6 @@
 #include <QApplication>
 #include <QIcon>
-#include "mapping_gui.h"
+#include "mapping.h"
 
 
 int main(int argc, char *argv[])
@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
   ros::init(argc, argv, "mapping_gui_node",ros::init_options::AnonymousName);
   QApplication a(argc, argv);
 
-  MappingGUI w;
+  MainWindow w;
 
   // set the window title as the node name
   w.setWindowTitle(QString::fromStdString(
