@@ -14,6 +14,7 @@ class Mapping{
         float rate;
         uint32_t time;
         bool increment;
+        float x[2], y[2];
 
     public:
         Mapping(int frequency, tfplus* lidar, Servo* servo);

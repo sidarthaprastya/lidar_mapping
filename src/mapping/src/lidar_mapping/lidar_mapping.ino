@@ -15,7 +15,7 @@ ros::Publisher map_pub("map_lidar", &map_msg);
 
 tfplus lidar(0x10);
 Servo rotator;
-Mapping mapper(1000, &lidar, &rotator);
+Mapping mapper(100, &lidar, &rotator);
 
 int j;
 
@@ -28,7 +28,7 @@ void map_post(){
 void setup() {
   // put your setup code here, to run once:
   nh.initNode();
-  Serial.begin(115200);
+  Serial.begin(250000);
   lidar.begin(1000);
 //  rotator.attach(rotator_pin, 544,1100);
   rotator.attach(rotator_pin);

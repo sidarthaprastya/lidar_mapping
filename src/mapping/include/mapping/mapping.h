@@ -35,14 +35,11 @@ private:
   QTimer *ros_timer;
   void addPoint(double x, double y);
   void clearData();
-//  QScatt
 
   ros::NodeHandlePtr nh_;
   ros::Subscriber lidar_sub_;
   ros::Publisher  start_pub_;
   QVector<double> qv_x, qv_y;
-//  double x_map[100];
-//  double y_map[100];
 };
 
-#endif // MAPPING_GUI_H
+#endif // MAPPING_H

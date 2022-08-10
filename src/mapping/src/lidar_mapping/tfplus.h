@@ -4,12 +4,12 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-// This Library is made for Arduino UNO
 
 class tfplus{
     private:
         char address;
         uint8_t data[9];
+        //uart_t* uart;
 
     public:
         // Initiate device TFPlus
